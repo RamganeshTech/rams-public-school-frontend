@@ -4,7 +4,7 @@ import { SCHOOL_NAME } from '../utils/constants';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-mainBg relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32">
+    <section className="bg-mainBg relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
           

@@ -124,10 +124,29 @@ const CareerForm: React.FC = () => {
     <div className="relative bg-surface border border-border-soft rounded-3xl shadow-xl overflow-hidden">
       
       {/* Modern Top-Right Design Elements */}
-      <div className="absolute -top-16 -right-16 w-48 h-48 bg-primary-soft rounded-full blur-3xl opacity-60 pointer-events-none" aria-hidden="true"></div>
+      {/* <div className="absolute -top-16 -right-16 w-48 h-48 bg-primary-soft rounded-full blur-3xl opacity-60 pointer-events-none" aria-hidden="true"></div>
       <div className="absolute top-0 right-0 bg-primary text-inverse text-xs font-bold px-4 py-2 rounded-bl-2xl shadow-sm z-10 flex items-center gap-2">
         <i className="fa-solid fa-briefcase" aria-hidden="true"></i> Hiring Now
-      </div>
+      </div> */}
+
+      <div className="absolute -top-16 -right-16 w-48 h-48 bg-primary-soft rounded-full blur-3xl opacity-60 pointer-events-none" aria-hidden="true"></div>
+      
+      {/* 2. Layered Abstract Geometric Shapes */}
+      <div className="absolute top-0 right-0 w-32 h-32 pointer-events-none overflow-hidden rounded-tr-3xl" aria-hidden="true">
+        {/* Large transparent ring */}
+        <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full border-[10px] border-primary-soft/50"></div>
+        
+        {/* Solid colored accent circle */}
+        <div className="absolute -top-6 -right-6 w-16 h-16 bg-primary/10 rounded-full flex items-end justify-start p-3">
+           {/* Optional: A very subtle icon fading into the background. 
+               Use fa-briefcase for Career, fa-paper-plane for Inquiry */}
+           {/* <i className="fa-solid fa-paper-plane text-primary/30 text-lg transform -rotate-12"></i> */}
+           <i className="fa-solid fa-briefcase text-primary/30 text-lg transform -rotate-12"></i>
+        </div>
+        
+        {/* Tiny floating accent dot */}
+        {/* <div className="absolute top-10 right-10 w-2.5 h-2.5 bg-primary rounded-full shadow-sm"></div> */}
+      </div> 
 
       <form 
         onSubmit={handleSubmit} 

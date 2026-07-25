@@ -141,11 +141,36 @@ const SearchSelect: React.FC<SearchSelectProps> = ({
         />
 
         {/* Dropdown Chevron Icon */}
-        <div 
+        {/* <div 
           className="absolute inset-y-0 right-0 pr-4 flex items-center cursor-pointer text-muted"
           onClick={() => setIsOpen(!isOpen)}
         >
           <i className={`fa-solid fa-chevron-down text-sm transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true"></i>
+        </div> */}
+
+        {/* Right Side Icons (Clear Cross Mark & Dropdown Chevron) */}
+        <div className="absolute inset-y-0 right-0 pr-4 flex items-center gap-2">
+          {value && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onChange('');
+                setSearchTerm('');
+                setIsOpen(false);
+              }}
+              className="text-muted hover:text-foreground text-xs p-1 cursor-pointer transition-colors"
+              aria-label="Clear selected value"
+            >
+              <i className="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+          )}
+          <div 
+            className="cursor-pointer text-muted"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <i className={`fa-solid fa-chevron-down text-sm transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true"></i>
+          </div>
         </div>
       </div>
 

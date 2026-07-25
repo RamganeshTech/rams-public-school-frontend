@@ -57,10 +57,10 @@ const InquiryForm: React.FC = () => {
       isValid = false;
     }
 
-    if (!formData.grade) {
-      errors.grade = 'Please select a grade';
-      isValid = false;
-    }
+    // if (!formData.grade) {
+    //   errors.grade = 'Please select a grade';
+    //   isValid = false;
+    // }
 
     setFormErrors(errors);
     return isValid;
@@ -169,7 +169,7 @@ const InquiryForm: React.FC = () => {
               icon="fa-solid fa-phone"
               mandatory
               error={formErrors.mobile}
-              maxLength={12}
+              maxLength={10}
               autoComplete="tel"
             />
 

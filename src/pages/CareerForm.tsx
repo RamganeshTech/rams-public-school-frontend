@@ -83,10 +83,10 @@ const CareerForm: React.FC = () => {
       isValid = false;
     }
 
-    if (!formData.resume) {
-      errors.resume = 'Please upload your resume';
-      isValid = false;
-    }
+    // if (!formData.resume) {
+    //   errors.resume = 'Please upload your resume';
+    //   isValid = false;
+    // }
 
     setFormErrors(errors);
     return isValid;

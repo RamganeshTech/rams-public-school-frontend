@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { SCHOOL_NAME } from '../utils/constants';
 
 const Hero: React.FC = () => {
@@ -28,13 +28,13 @@ const Hero: React.FC = () => {
 
             {/* Call to Action Button */}
             <div className="pt-4 w-full sm:w-auto">
-              <Link 
-                to="/admissions" 
+              <a 
+                href="/#academics-extracurriculars" 
                 className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-md bg-primary hover:bg-primary-hover text-inverse px-8 py-3.5 text-base font-bold shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
               >
                 Apply Now
                 <i className="fa-solid fa-arrow-right"></i>
-              </Link>
+              </a>
             </div>
           </div>
 

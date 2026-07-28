@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { LOGO } from '../constants/constants';
 
 const Footer: React.FC = () => {
     return (
@@ -13,14 +14,15 @@ const Footer: React.FC = () => {
                     <div className="flex flex-col space-y-5 lg:pr-4">
                         <Link to="/" className="flex items-center gap-2" aria-label="Rams Public School Home">
                             <img
-                                src="/logo.png"
+                                // src="/logo.png"
+                                src={LOGO}
                                 alt="Rams Public School Logo"
-                                className="h-12 w-auto"
+                                className="h-16 sm:h-20 w-auto"
                                 loading="lazy"
                             />
-                            <span className="text-primary text-xl font-bold tracking-tight">
+                            {/* <span className="text-primary text-xl font-bold tracking-tight">
                                 Rams Public School
-                            </span>
+                            </span> */}
                         </Link>
                         <p className="text-muted text-sm leading-relaxed">
                             Empowering students with knowledge, discipline, and character. We build the foundation for a brighter, more innovative tomorrow.

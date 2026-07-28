@@ -18,7 +18,8 @@ const Hero: React.FC = () => {
             </h1>
             
             <h2 className="text-foreground/90 text-xl sm:text-2xl font-bold">
-              Nurturing Character, Inspiring Excellence.
+              {/* Nurturing Character, Inspiring Excellence. */}
+              Knowledge, Discipline, Excellence.
             </h2>
 
             {/* Simplified Subtext */}

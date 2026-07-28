@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LOGO } from '../constants/constants';
 
 const Header: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,18 +30,40 @@ const Header: React.FC = () => {
                     <div className="flex h-16 items-center justify-between">
 
                         {/* Left: Logo & Brand */}
-                        <div className="flex flex-shrink-0 items-center">
+                        {/* <div className="flex flex-shrink-0 items-center h-full">
                             <Link to="/" className="flex items-center gap-2" aria-label="Rams Public School Home">
                                 <img
-                                    src="/logo.png"
+                                    src={LOGO}
                                     alt="Rams Public School Logo"
-                                    className="h-10 w-auto"
+                                    className="h-full w-20"
                                     loading="lazy"
                                 />
-                                {/* School name in Red (text-primary) */}
                                 <span className="text-primary text-xl font-bold tracking-tight">
                                     Rams Public School
                                 </span>
+                            </Link>
+                        </div> */}
+
+
+                        <div className="flex flex-shrink-0 items-center h-full">
+                            <Link to="/" className="flex items-center gap-2" aria-label="Rams Public School Home">
+                                <img
+                                    src={LOGO}
+                                    alt="Rams Public School Logo"
+                                    /* 
+                                      Changes made:
+                                      1. Removed w-20
+                                      2. Set a fixed height (h-12 or h-14 depending on your navbar height)
+                                      3. Set w-auto so the width scales naturally with the height
+                                      4. Added object-contain for safety
+                                    */
+                                    className="h-12 w-auto object-contain"
+                                    loading="lazy"
+                                />
+                                {/* School name in Red (text-primary) */}
+                                {/* <span className="text-primary text-xl font-bold tracking-tight">
+            Rams Public School
+        </span> */}
                             </Link>
                         </div>
 

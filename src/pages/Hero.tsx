@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
                 href="/#academics-extracurriculars" 
                 className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-md bg-primary hover:bg-primary-hover text-inverse px-8 py-3.5 text-base font-bold shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
               >
-                Apply Now
+                Explore
                 <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>

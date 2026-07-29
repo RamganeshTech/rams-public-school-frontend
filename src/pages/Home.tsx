@@ -3,6 +3,9 @@ import Hero from './Hero'
 import About from './About'
 import Programs from './Programs'
 import InquiryForm from './InquiryForm'
+import WhyChooseUs from './WhyChooseUs'
+import OurApproach from './OurApproach'
+import ContactSection from './ContactSection'
 
 const Home = () => {
     return (
@@ -11,7 +14,13 @@ const Home = () => {
 
             <About />
 
+
+
             <Programs />
+
+            <OurApproach />
+
+            <WhyChooseUs />
             {/* Inquiry Form Section */}
             <section
                 aria-labelledby="home-inquiry-heading"
@@ -62,6 +71,9 @@ const Home = () => {
 
                 </div>
             </section>
+
+
+            <ContactSection />
 
 
         </main>

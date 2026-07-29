@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LOGO } from '../constants/constants';
+import { LOGO, SCHOOL_PHONENO } from '../constants/constants';
 
 const Footer: React.FC = () => {
     return (
@@ -92,18 +92,19 @@ const Footer: React.FC = () => {
                                 <div className="bg-primary-soft p-2 rounded-md text-primary mt-1">
                                     <i className="fa-solid fa-location-dot"></i>
                                 </div>
-                                <span className="leading-relaxed">123 Education Lane,<br />School District,<br />City Name 12345</span>
+                                <span className="leading-relaxed">Tiruverkadu Rd, Ambigai Nagar<br />MGR Nagar, Ayappakkam, <br />Chennai, Ayappakkam, Tamil Nadu 600077</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <div className="bg-primary-soft p-2 rounded-md text-primary flex-shrink-0">
                                     <i className="fa-solid fa-phone" aria-hidden="true"></i>
                                 </div>
                                 <a
-                                    href="tel:+918825922099"
+                                    href={`tel:+91${SCHOOL_PHONENO}`}
                                     className="font-bold text-foreground hover:text-primary transition-colors duration-200"
-                                    aria-label="Call us at +91 88259 22099"
+                                    aria-label={`Call us at +91 ${SCHOOL_PHONENO}`}
                                 >
-                                    +91 88259 22099
+                                    {/* +91 88259 22099 */}
+                                    +91 {SCHOOL_PHONENO}
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">

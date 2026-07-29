@@ -48,6 +48,15 @@ html, body {
   --status-info: #3b82f6;      /* blue */
   --status-warning: #f59e0b;
   --status-danger: #ef4444;
+
+
+  /* Deep navy — for premium, high-contrast sections (Why Us, CTA banners) */
+  --brand-secondary: #16233d;
+  --brand-secondary-soft: #eef1f6;
+ 
+  /* Muted gold — for badges, ratings, "premium" accents. Used sparingly. */
+  --brand-gold: #c9a44c;
+  --brand-gold-soft: #faf6ea;
 }
 
 @theme inline {
@@ -73,4 +82,14 @@ html, body {
   --color-info: var(--status-info);
   --color-warning: var(--status-warning);
   --color-danger: var(--status-danger);
+
+
+
+
+  
+  --color-secondary: var(--brand-secondary);
+  --color-secondary-soft: var(--brand-secondary-soft);
+ 
+  --color-gold: var(--brand-gold);
+  --color-gold-soft: var(--brand-gold-soft);
 }

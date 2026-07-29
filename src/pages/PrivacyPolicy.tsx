@@ -1,4 +1,5 @@
 import React from 'react';
+import { SCHOOL_PHONENO } from '../constants/constants';
 
 const PrivacyPolicy: React.FC = () => {
   return (
@@ -105,7 +106,8 @@ const PrivacyPolicy: React.FC = () => {
             </p>
             <ul className="mt-4 space-y-2 text-muted">
               <li><strong>Email:</strong> <a href="mailto:ramstechcircle@gmail.com" className="hover:text-primary transition-colors">ramstechcircle@gmail.com</a></li>
-              <li><strong>Phone:</strong> +91 88259 22099</li>
+              <li><strong>Phone:</strong> +91 {SCHOOL_PHONENO}
+              </li>
             </ul>
           </section>
 

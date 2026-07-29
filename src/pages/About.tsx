@@ -119,7 +119,7 @@ import React from 'react';
 import { SCHOOL_NAME } from '../utils/constants';
 import image3 from "../assets/image3.webp"
 import image5 from "../assets/image5.webp"
-import image9 from "../assets/image9.webp"
+// import image9 from "../assets/image9.webp"
 
 
 
@@ -172,7 +172,7 @@ const About: React.FC = () => {
               <div className="relative rounded-lg overflow-hidden aspect-square shadow-md">
                 <img
                   // src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1974&auto=format&fit=crop"
-                  src={image9}
+                  src="./image9.webp"
                 alt="Classroom"
                 className="h-full w-full object-cover"
                 />

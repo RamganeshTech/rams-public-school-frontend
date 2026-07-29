@@ -80,10 +80,10 @@
 import React from 'react';
 import { SCHOOL_NAME } from '../utils/constants';
 
-import image6 from "../assets/image6.webp"
-import image7 from "../assets/image7.webp"
-import image8 from "../assets/image8.webp"
-import image9 from "../assets/image9.webp"
+// import image6 from "../assets/image6.webp"
+// import image8 from "../assets/image8.webp"
+// import image9 from "../assets/image9.webp"
+// import { IMAGE7 } from '../constants/constants';
 
 
 const highlights = [
@@ -95,7 +95,8 @@ const highlights = [
 const collage = [
   {
     // src: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop',
-    src: image7,
+    src: '/image7.webp',
+    // src: IMAGE7,
     alt: 'Students engaged in classroom learning',
     icon: 'fa-book',
     label: 'Academics',
@@ -103,7 +104,7 @@ const collage = [
   },
   {
     // src: 'https://images.unsplash.com/photo-1526307616774-60d0098f7642?q=80&w=1974&auto=format&fit=crop',
-    src: image6,
+    src: "image6.webp",
     alt: 'Students playing sports on the school field',
     icon: 'fa-futbol',
     label: 'Sports',
@@ -111,7 +112,7 @@ const collage = [
   },
   {
     // src: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1974&auto=format&fit=crop',
-    src: image8,
+    src: "./image8.webp",
 
     alt: 'Students working on an art project',
     icon: 'fa-palette',
@@ -120,8 +121,7 @@ const collage = [
   },
   {
     // src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1974&auto=format&fit=crop',
-    src: image9,
-
+    src: "./image9.webp",
     alt: 'Teacher guiding a student at school',
     icon: 'fa-people-group',
     label: 'Campus Life',
@@ -214,7 +214,8 @@ const Hero: React.FC = () => {
                     src={img.src}
                     alt={img.alt}
                     className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                    loading={idx === 0 ? 'eager' : 'lazy'}
+                    // loading={idx === 0 ? 'eager' : 'lazy'}
+                    loading={'eager'}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-black/0"></div>
                   <span className="absolute bottom-1.5 left-1.5 sm:bottom-2.5 sm:left-2.5 inline-flex items-center gap-1.5 bg-surface/95 backdrop-blur-sm text-foreground text-[9px] sm:text-xs font-bold px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full shadow-sm">
